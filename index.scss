@@ -1,0 +1,27 @@
+
+.box {
+  overflow: hidden;
+  position: relative;
+  margin: 0px auto;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 200px;
+  border-radius: 10px;
+
+  &:before {
+    position: absolute;
+    margin: calc(50px * -1);
+    padding: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 350px rgba(#95a, .75);
+    content: '';
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
